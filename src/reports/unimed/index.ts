@@ -12,26 +12,28 @@ interface DataItem {
 
 interface Data {
   doctor_name: string;
+  month: string;
   attendances: DataItem[];
 }
 
 const generateData = (): Data => {
   return {
     doctor_name: 'Dr. Cesar Takeo Miyaji',
+    month: 'Setembro',
     attendances: [
-      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Aadi', care_category: 'category', health_insurance_name: 'insurance' },
-      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Aafje', care_category: 'category', health_insurance_name: 'insurance' },
-      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Aaid', care_category: 'category', health_insurance_name: 'insurance' },
-      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Aalam', care_category: 'category', health_insurance_name: 'insurance' },
-      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Aali', care_category: 'category', health_insurance_name: 'insurance' },
-      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Aalilyanna', care_category: 'category', health_insurance_name: 'insurance' },
-      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Aaliyah', care_category: 'category', health_insurance_name: 'insurance' },
-      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Aamina', care_category: 'category', health_insurance_name: 'insurance' },
-      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Aamira', care_category: 'category', health_insurance_name: 'insurance' },
-      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Baara', care_category: 'category', health_insurance_name: 'insurance' },
-      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Baba', care_category: 'category', health_insurance_name: 'insurance' },
-      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Baback', care_category: 'category', health_insurance_name: 'insurance' },
-      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Babette', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '08/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Aadi', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '08/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Aafje', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '08/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Aaid', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '08/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Aalam', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '08/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Aali', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '08/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Aalilyanna', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '08/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Aaliyah', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '08/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Aamina', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '08/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Aamira', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '08/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Baara', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '08/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Baba', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '08/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Baback', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '08/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Babette', care_category: 'category', health_insurance_name: 'insurance' },
       { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Baby', care_category: 'category', health_insurance_name: 'insurance' },
       { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Bach Yen', care_category: 'category', health_insurance_name: 'insurance' },
       { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Bachelor', care_category: 'category', health_insurance_name: 'insurance' },
@@ -55,16 +57,108 @@ const generateData = (): Data => {
       { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Dafydd', care_category: 'category', health_insurance_name: 'insurance' },
       { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Dagan', care_category: 'category', health_insurance_name: 'insurance' },
       { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Dagmar', care_category: 'category', health_insurance_name: 'insurance' },
-      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Easton', care_category: 'category', health_insurance_name: 'insurance' },
-      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Eastwood', care_category: 'category', health_insurance_name: 'insurance' },
-      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Eaton', care_category: 'category', health_insurance_name: 'insurance' },
-      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Eavan', care_category: 'category', health_insurance_name: 'insurance' },
-      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Ebba', care_category: 'category', health_insurance_name: 'insurance' },
-      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Ebbe', care_category: 'category', health_insurance_name: 'insurance' },
-      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Eben', care_category: 'category', health_insurance_name: 'insurance' },
-      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Ebenezer', care_category: 'category', health_insurance_name: 'insurance' },
-      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Ebony', care_category: 'category', health_insurance_name: 'insurance' },
-      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Fabiana', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '10/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Easton', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '10/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Eastwood', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '10/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Eaton', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '10/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Eavan', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '10/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Ebba', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '10/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Ebbe', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '10/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Eben', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '10/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Ebenezer', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '10/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Ebony', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '10/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Fabiana', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '08/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Aadi', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '08/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Aafje', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '08/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Aaid', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '08/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Aalam', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '08/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Aali', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '08/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Aalilyanna', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '08/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Aaliyah', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '08/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Aamina', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '08/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Aamira', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '08/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Baara', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '08/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Baba', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '08/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Baback', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '08/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Babette', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Baby', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Bach Yen', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Bachelor', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Bachué', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Badar', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Cabernet', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Cable', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Cabrera', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Cabriole', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Cache', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Cachet', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Cachi', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Cactus', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Cad', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Dacia', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Dacian', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Dae', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Daemyn', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Daenerys', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Daffodil', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Dafydd', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Dagan', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '09/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Dagmar', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '10/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Easton', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '10/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Eastwood', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '10/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Eaton', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '10/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Eavan', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '10/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Ebba', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '10/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Ebbe', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '10/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Eben', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '10/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Ebenezer', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '10/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Ebony', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '10/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Fabiana', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '11/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Aadi', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '11/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Aafje', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '11/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Aaid', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '11/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Aalam', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '11/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Aali', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '11/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Aalilyanna', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '11/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Aaliyah', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '11/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Aamina', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '11/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Aamira', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '11/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Baara', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '11/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Baba', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '11/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Baback', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '11/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Babette', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '12/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Baby', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '12/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Bach Yen', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '12/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Bachelor', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '12/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Bachué', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '12/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Badar', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '12/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Cabernet', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '12/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Cable', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '12/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Cabrera', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '12/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Cabriole', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '12/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Cache', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '12/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Cachet', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '12/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Cachi', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '12/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Cactus', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '12/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Cad', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '12/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Dacia', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '12/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Dacian', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '12/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Dae', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '12/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Daemyn', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '12/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Daenerys', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '12/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Daffodil', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '12/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Dafydd', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '12/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Dagan', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '12/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Dagmar', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '13/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Easton', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '13/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Eastwood', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '13/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Eaton', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '13/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Eavan', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '13/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Ebba', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '13/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Ebbe', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '13/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Eben', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '13/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Ebenezer', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '13/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Ebony', care_category: 'category', health_insurance_name: 'insurance' },
+      { date: '13/09/2020', guide_number: Math.floor(Math.random() * 100000), patient_name: 'Fabiana', care_category: 'category', health_insurance_name: 'insurance' },
     ],
   };
 }
@@ -72,21 +166,27 @@ const generateData = (): Data => {
 const render = (data: Data): Promise<string> => {
   const header = (rpt: ReportRenderer, data: Data) => {
     rpt.font('Times-Roman');
-    rpt.fontSize(37);
-    rpt.fontBold();
-    rpt.print(data.doctor_name);
+    rpt.band([
+      { data: data.doctor_name, width: 320, align: 'left', fontSize: 28 },
+      { data: `(${rpt.currentPage()})`, width: 30, fontSize: 20 },
+      { data: data.month, fontSize: 20, width: 100 },
+    ], { addX: 110 });
+    rpt.addY(20);
   };
 
   const detail = (rpt: ReportRenderer, data: Data) => {
-    rpt.fontSize(14);
+    rpt.fontSize(12);
     rpt.fontNormal();
+    let lastDate = '';
     data.attendances.forEach(({ date, guide_number, patient_name, health_insurance_name }, index) => {
+      const fill = index % 2 === 0 ? '#bbb' : '#ddd';
       rpt.band([
-        { data: date, width: 80, align: 'right' },
-        { data: guide_number, width: 80, align: 'center' },
-        { data: `${index + 1} - ${patient_name}`, width: 200, align: 'left' },
-        { data: health_insurance_name, width: 100, align: 'left' }
-      ], { font: "Times-Roman", addY: 5 });
+        { data: lastDate !== date ? date : '', width: 80, align: 'left' },
+        { data: guide_number, width: 95, align: 'center' },
+        { data: `${index + 1} - ${patient_name}`, width: 210, align: 'left' },
+        { data: health_insurance_name, width: 180, align: 'left', height: 20 }
+      ], { addY: 5.4, padding: 2, fill });
+      lastDate = date;
     });
   };
 
@@ -96,7 +196,8 @@ const render = (data: Data): Promise<string> => {
 
     const report = new Report(filePath);
     report
-      .margins({ top: 100, right: 20, bottom: 10, left: 20 })
+      .paper('SRA4')
+      .margins({ top: 110, right: 35, bottom: 20, left: 35 })
       .header(header)
       .detail(detail)
       .data(data)
